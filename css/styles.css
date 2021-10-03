@@ -1,0 +1,16 @@
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+
+.arewa-pattern{
+    height: 100vh;
+}
+
+/* NAV */
+.navbar-brand{
+    color: #5A362A !important;
+}

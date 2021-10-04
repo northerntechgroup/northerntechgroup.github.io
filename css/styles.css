@@ -1,3 +1,29 @@
+@media (max-width: 575.98px) {
+    body{
+        padding-top: 5px !important;
+    }
+    .row{
+        margin: 30px;
+    }
+    .contact, .social-icons{
+        padding: 10px !important;
+    }
+}
+
+@media (max-width: 767.98px) {  }
+
+@media (max-width: 991.98px) {  }
+
+@media (max-width: 1199.98px) {  }
+
+@media (max-width: 1399.98px) {  }
+
+:root {
+    --dark: #630A10;
+    --text-dark: #911F27;
+    --text-light: #FEFCF3;
+    --accent: #FACE7F;
+}
 
 html {
     height: 100%;
@@ -6,11 +32,60 @@ body {
     min-height: 100%;
 }
 
+.long-shadow{
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.glass{
+    background: rgba( 255, 255, 255, 0.04 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+}
+
+.social-icons a i:hover, .contact a:hover {
+    color: var(--text-dark);
+    transform: scale(1.05);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    background: rgba( 255, 255, 255, 0.04 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+}
+
 .arewa-pattern{
     height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* NAV */
+.navbar{
+    background-color: var(--text-light) !important;
+}
 .navbar-brand{
-    color: #5A362A !important;
+    color: var(--text-dark) !important;
+}
+
+.nav-item{
+    margin: 0 10px 0 10px;
+    color: var(--text-dark) !important;
+    padding: 0 5px 0 5px;
+}
+
+.nav-item:hover{
+    border-radius: 5px;
+    background-color: rgba(215, 215, 208, 0.85);
+}
+
+/* ABOUT */
+.who-we-are{
+    color: var(--dark);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 7px -5px #000000;
 }
